@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f1f1a6;
+    font-family: 'Roboto', sans-serif;
+    color: #182c25;
+}
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Cabeçalho */
+header {
+    padding: 16px 0;
+    background-color: #144516;
+    color: #ecf0f1;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header nav li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Sobre */
+section {
+    padding: 40px 0;
+}
+
+#about .container {
+    align-items: flex-start;
+}
+
+.main-banner {
+    width: 48%;
+    margin-right: 32px;
+    border-radius: 4px;
+}
+
+#about h2 {
+    margin-bottom: 16px;
+    color: #144516;
+}
+
+#about h3 {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #144516;
+}
+
+#about p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* Seção Galeria */
+#gallery .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery h2 {
+    margin-bottom: 24px;
+    color: #144516;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.gallery-grid article {
+    flex: 1;
+    text-align: center;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.gallery-grid h3 {
+    font-size: 15px;
+    color: #144516;
+}
+
+/* Seção Contato */
+#contact .container {
+    display: block;
+}
+
+#contact h2 {
+    margin-bottom: 16px;
+    color: #144516;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.contact-methods h3 {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #144516;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+form textarea {
+    resize: none;
+    height: 160px;
+}
+
+form button {
+    background-color: #14452f;
+    color: #ecf0f1;
+    font-family: 'Bungee', cursive;
+    cursor: pointer;
+    padding: 12px;
+}
+
+form button:hover {
+    background-color: #144516;
+}
+
+input:focus,
+textarea:focus {
+    outline-color: #144516;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 12px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #144516;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
